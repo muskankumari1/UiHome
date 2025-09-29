@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imgProperty"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_home_placeholder" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$2,950/mo"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/imgProperty"
+            android:layout_marginStart="12dp" />
+
+        <ImageButton
+            android:id="@+id/btnFavorite"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/heart"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="Favorite"
+            android:tint="@color/red"/>
+
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SoMa, San Francisco"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            android:layout_below="@id/tvPrice"
+            android:layout_toEndOf="@id/imgProperty"
+            android:layout_marginStart="12dp" />
+
+        <TextView
+            android:id="@+id/tvDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 Bed • 2 Bath • 1,100 sqft"
+            android:textSize="13sp"
+            android:layout_below="@id/tvLocation"
+            android:layout_toEndOf="@id/imgProperty"
+            android:layout_marginStart="12dp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

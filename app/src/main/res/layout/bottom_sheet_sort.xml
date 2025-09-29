@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:id="@+id/rgSortOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbLowToHigh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: Low to High" />
+
+        <RadioButton
+            android:id="@+id/rbHighToLow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: High to Low" />
+
+        <RadioButton
+            android:id="@+id/rbPopularity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popularity" />
+
+        <RadioButton
+            android:id="@+id/rbNewest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Newest First" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnApplySort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apply" />
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/cbApartment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apartment" />
+
+    <CheckBox
+        android:id="@+id/cbVilla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Villas" />
+
+    <CheckBox
+        android:id="@+id/cbCommercial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Commercial" />
+
+    <CheckBox
+        android:id="@+id/cbPlots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plots" />
+
+    <Button
+        android:id="@+id/btnApplyType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        android:layout_marginTop="12dp" />
+</LinearLayout>
